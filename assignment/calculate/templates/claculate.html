@@ -1,0 +1,17 @@
+this is weight:{{height}}
+<br>
+this is height:{{weight}}
+
+<br>
+
+Body Mass Index is :{{mass}}
+
+<br>
+<br>
+<br>
+
+BMI is {{mass}} and you are: {% if mass < 18.5 %}
+Underweight {% elif mass >= 18.5 and mass < 24.9 %}
+Normal weight {% elif mass >= 25 and mass < 29.9 %}
+Overweight {% elif mass >= 30 %}
+Obesity {% endif %}
